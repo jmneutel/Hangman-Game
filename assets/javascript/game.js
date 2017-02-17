@@ -17,6 +17,7 @@ var winCounter = 0;
 var lossCounter = 0;
 var numGuesses = 9;
 
+
 function startGame(){
 
 	var numGuesses = 9;
@@ -38,6 +39,7 @@ function startGame(){
 
 	document.getElementById("guesses-left").innerHTML = numGuesses;
 	document.getElementById("word-blank").innerHTML = blanksAndSuccesses.join(" ");
+	document.getElementById("zero").innerHTML = '<img id="one" src="assets/images/opening.png">'
 };
 
 function checkLetters(letter){
@@ -65,11 +67,28 @@ function checkLetters(letter){
 
 		numGuesses --;
 		wrongGuesses.push(letter);
+		// start messing around here
+		if (numGuesses === 8){
+		document.getElementById("zero").innerHTML = '<img id="one" src="assets/images/first.png">'
+	}else if (numGuesses === 7){
+		document.getElementById("zero").innerHTML = '<img id="one" src="assets/images/second.png">'
+	}else if (numGuesses === 6){
+		document.getElementById("zero").innerHTML = '<img id="one" src="assets/images/third.png">'
+	}else if (numGuesses === 5){
+		document.getElementById("zero").innerHTML = '<img id="one" src="assets/images/fourth.png">'
+	}else if (numGuesses === 4){
+		document.getElementById("zero").innerHTML = '<img id="one" src="assets/images/fifth.png">'
+	}else if (numGuesses === 3){
+		document.getElementById("zero").innerHTML = '<img id="one" src="assets/images/sixth.png">'
+	}else if (numGuesses === 2){
+		document.getElementById("zero").innerHTML = '<img id="one" src="assets/images/eighth.png">'
+	}else if (numGuesses === 1){
+		document.getElementById("zero").innerHTML = '<img id="one" src="assets/images/nineth.png">'
+	}
 	};
 
 
 };
-
 function roundComplete(){
 
 	document.getElementById("word-blank").innerHTML = blanksAndSuccesses.join(" ");
@@ -99,7 +118,6 @@ function roundComplete(){
 
 };
 
-
 startGame();
 document.onkeyup = function(event){
 
@@ -108,34 +126,4 @@ document.onkeyup = function(event){
 	checkLetters(letterGuessed);
 	roundComplete();
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

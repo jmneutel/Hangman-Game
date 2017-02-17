@@ -57,15 +57,69 @@ h2 {
 	margin-bottom: 50px;
 }
 
-.move {
-	float: left;
-	margin-left: 300px;
+#zero {
 
+	position: relative;
+	left: 680px;
+	
 }
 
+/*#one {
 
+	position: relative;
+	left: 605px;
+	
+}
 
+#two {
 
+	position: relative;
+	left: 530px;
+	
+}
+#three {
+
+	position: relative;
+	left: 455px;
+	
+}
+#four {
+
+	position: relative;
+	left: 375px;
+}
+#five {
+
+	position: relative;
+	left: 295px;
+	
+}
+
+#six {
+
+	position: relative;
+	left: 212px;
+	
+}
+
+#seven {
+
+	position: relative;
+	left: 130px;
+	
+}
+#eight {
+
+	position: relative;
+	left: 50px;
+	
+}
+#nine {
+
+	position: relative;
+	right: 40px;
+	
+}*/
 
 
 
