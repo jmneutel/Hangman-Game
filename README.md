@@ -23,8 +23,3 @@
 - Javascript
 - HTML
 - CSS
-
-## Code Explaination
-- Firstly, I made an extensive pseudo code outlining all the variables and functions that I needed to create. The hardest part was figuring out where to start. 
-- Next, I wrote out the logic. Using console.log(), I constantly checked my work.
-- Then I created the custom CSS and HTML for the page.
